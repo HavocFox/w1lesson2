@@ -9,7 +9,7 @@ dict_2 = {
 'dinner': 'turkey',
 'ice_cream': 'vanilla',
 'appetizer': 'soup',
-'cobbler': 'apple'
+'cobbler': 'peach'
 }
 
 # Task 1
@@ -34,7 +34,7 @@ def merge_dicts(dict1, dict2):
 def find_intersection(dict1, dict2):
     endict = {}
     for key, value in dict1.items():
-        if key in dict2:
+        if key in dict2 and dict1[key] == dict2[key]:
             endict[key] = value
     return endict
 
